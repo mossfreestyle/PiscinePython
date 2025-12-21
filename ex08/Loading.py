@@ -12,7 +12,7 @@ def ft_tdqm(lst: range) -> Generator[Any, None, None]:
 
     for i, elem in enumerate(lst, 1):
         percent = int(100 * i / total)
-        filled = int(bar_len * i /total)
+        filled = int(bar_len * i / total)
         if filled > 0:
             bar = '=' * (filled - 1) + '>'
         else:
