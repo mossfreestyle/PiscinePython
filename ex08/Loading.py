@@ -3,7 +3,7 @@ import os
 from typing import Generator, Any
 
 
-def ft_tdqm(lst: range) -> Generator[Any, None, None]:
+def ft_tqdm(lst: range) -> Generator[Any, None, None]:
     total = len(lst)
     try:
         bar_len = max(20, os.get_terminal_size().columns - 42)
